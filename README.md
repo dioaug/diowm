@@ -10,6 +10,7 @@ Patches
 - smartborders-6.2
 - tilegap-6.4
 - pertag-20200914-61bb8b2
+- focusonclick-20200110-61bb8b2
 
 Requirements
 ------------
