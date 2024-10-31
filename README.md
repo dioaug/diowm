@@ -14,6 +14,7 @@ Patches
 - ewmhtags-6.2
 - focusonnetactive-6.2
 - resizecorners-6.5
+- cursorwarp-6.3
 
 Requirements
 ------------
