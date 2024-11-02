@@ -14,6 +14,7 @@ Patches
 - focusonnetactive-6.2
 - resizecorners-6.5
 - cursorwarp-6.3
+- actualfullscreen-20211013-cb3f58a
 
 Requirements
 ------------
