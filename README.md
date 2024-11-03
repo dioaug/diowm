@@ -15,6 +15,7 @@ Patches
 - resizecorners-6.5
 - cursorwarp-6.3
 - actualfullscreen-20211013-cb3f58a
+- statuscmd-20210405-67d76bd
 
 Requirements
 ------------
