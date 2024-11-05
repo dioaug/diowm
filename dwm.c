@@ -60,7 +60,7 @@
 
 /* enums */
 enum { CurNormal, CurResize, CurMove, CurLast }; /* cursor */
-enum { SchemeNorm, SchemeSel, SchemeSec }; /* color schemes */
+enum { SchemeNorm, SchemeSel, SchemeSec, SchemeSecInv }; /* color schemes */
 enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
        NetWMFullscreen, NetActiveWindow, NetWMWindowType,
        NetWMWindowTypeDialog, NetWMWindowTypeDock, NetClientList, NetDesktopNames, NetDesktopViewport, NetNumberOfDesktops, NetCurrentDesktop, NetLast }; /* EWMH atoms */
@@ -819,7 +819,11 @@ drawbar(Monitor *m)
 	x = 0;
 	for (i = 0; i < LENGTH(tags); i++) {
 		if (m->tagset[m->seltags] & 1 << i)
-			tagscheme = SchemeSel;
+			if (m == selmon) {
+				tagscheme = SchemeSel;
+			} else {
+				tagscheme = SchemeSecInv;
+			}
 		else if (occ & 1 << i)
 			tagscheme = SchemeNorm;
 		else
